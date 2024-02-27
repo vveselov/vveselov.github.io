@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="Windows-1251">
-  <title>Чатбот</title>
-  <meta name="description" content="Чатбот">
-  <meta name="author" content="Владимир Веселов">
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-  <script src="chatbot/chatbot.js"></script>
-  <script src="chatbot/p.js"></script>
-</head>
-<body>
-    <div class='im'>
-    <img alt="bot" src="chatbot/images/pushkin.jpg">
+  <head>
+    <meta charset="Windows-1251" />
+    <title>Р§Р°С‚Р±РѕС‚</title>
+    <meta name="description" content="Р§Р°С‚Р±РѕС‚" />
+    <meta name="author" content="Р’Р»Р°РґРёРјРёСЂ Р’РµСЃРµР»РѕРІ" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <script src="chatbot/chatbot.js"></script>
+    <script src="chatbot/p.js"></script>
+  </head>
+  <body>
+    <div class="im">
+      <img alt="bot" src="chatbot/images/pushkin.jpg" />
     </div>
-    <div id='answer' class='phrase'> 
-      Пушкин:
+    <div id="answer" class="phrase">РџСѓС€РєРёРЅ:</div>
+    <div id="question">
+      <input
+        type="text"
+        placeholder="Р’РѕРїСЂРѕСЃ ..."
+        onkeydown="ask(event,this);"
+        name="input"
+      />
     </div>
-    <div id='question'>
-       <input type="text" placeholder="Вопрос ..." onkeydown="ask(event,this);" name="input">
-    </div>
-</body>
+  </body>
 </html>
